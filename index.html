@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+<!--    <link rel="stylesheet" href="styles.css">-->
+    <title>Gradient buttons by Wojciech Antos</title>
+</head>
+<body>
+    <main>
+        <h1>Having some fun with gradient buttons 🕺</h1>
+        <div class="buttons-wrapper">
+            <div class="button-background button-background--primary">
+                <button class="button-base button-base--primary">
+                    <span class="button-overlay button-overlay--primary">Hover me</span>
+                    Hover me</button>
+            </div>
+            <div class="button-background button-background--secondary">
+                <button class="button-base button-base--secondary">
+                    <span class="button-overlay button-overlay--secondary">Hover me</span>
+                    Hover me</button>
+            </div>
+            <div class="button-background button-background--expanding">
+                <span class="button-overlay button-overlay--expanding"></span>
+                <button class="button-base button-base--expanding">Hover me</button>
+            </div>
+            <div class="button-background button-background__flip">
+                <button class="button-base button-base__flip">
+                    <span class="button-overlay button-overlay__flip"></span>
+                    <span class="button-overlay__flip-text button-overlay__flip-text--top">Hover me</span>
+                    <span class="button-overlay__flip-text button-overlay__flip-text--bottom">Cool, huh?</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Like my work?</p>
+        <a href="https://www.linkedin.com/in/wojciech-antos-b33621242/">
+            <div class="link-wrapper">
+                Follow me on
+                <svg width="20" height="20" viewBox="0 0 2490 2490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 178.366C0 79.9134 82.4229 0 184.027 0H2305.97C2407.62 0 2490 79.9134 2490 178.366V2311.66C2490 2410.14 2407.62 2490 2305.97 2490H184.027C82.4326 2490 0 2410.15 0 2311.69V178.337V178.366Z" fill="#006699"/>
+                    <path d="M756.688 2083.8V962.794H384.083V2083.8H756.727H756.688ZM570.463 809.766C700.371 809.766 781.247 723.686 781.247 616.11C778.816 506.083 700.371 422.405 572.934 422.405C445.409 422.405 362.12 506.083 362.12 616.1C362.12 723.676 442.967 809.756 568.022 809.756H570.434L570.463 809.766ZM962.93 2083.8H1335.51V1457.85C1335.51 1424.39 1337.94 1390.84 1347.78 1366.94C1374.7 1299.97 1436.01 1230.65 1538.97 1230.65C1673.76 1230.65 1727.71 1333.44 1727.71 1484.16V2083.8H2100.28V1441.05C2100.28 1096.74 1916.48 936.512 1671.34 936.512C1470.36 936.512 1382.1 1048.84 1333.05 1125.35H1335.54V962.833H962.949C967.813 1068 962.92 2083.84 962.92 2083.84L962.93 2083.8Z" fill="white"/>
+                </svg>
+            </div>
+        </a>
+
+        <div class="link-wrapper">
+            aweb.wojciechantos@gmail.com
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.36367 17.8012H4.54547V10.0739L0 6.66479V16.4376C0 17.191 0.610234 17.8012 1.36367 17.8012V17.8012Z" fill="#4285F4"/>
+                <path d="M15.4551 17.8012H18.6369C19.3903 17.8012 20.0005 17.1909 20.0005 16.4375V6.66479L15.4551 10.0739V17.8012Z" fill="#34A853"/>
+                <path d="M15.4551 4.16503V10.0741L20.0005 6.66503V4.84686C20.0005 3.16163 18.0767 2.19913 16.7278 3.2105L15.4551 4.16503Z" fill="#FBBC04"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.54492 10.0739V4.16479L9.99945 8.25573L15.454 4.16479V10.0739L9.99945 14.1648L4.54492 10.0739Z" fill="#EA4335"/>
+                <path d="M0 4.84662V6.66479L4.54547 10.0739V4.16479L3.27273 3.21025C1.92383 2.19889 0 3.16139 0 4.84654V4.84662Z" fill="#C5221F"/>
+            </svg>
+        </div>
+    </footer>
+</body>
+<style>
+    :root {
+        --text-color: #FFF4E4;
+        --text-color-secondary: #4D1A37;
+        --button-radius: 32px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        color: var(--text-color);
+
+        font-family: 'Satoshi', sans-serif;
+        background-image: linear-gradient( 174.2deg, #343434 7.1%, #252525 67.4%);
+    }
+
+    main {
+        gap: 40px;
+        width: 100%;
+        height: 100vh;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    footer {
+        gap: 6px;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        padding: 16px;
+        position: fixed;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        transition: color 0.2s;
+        color: var(--text-color);
+
+        &:hover, &:focus, &:active {
+            color: #bdb2a8;
+            text-decoration: underline;
+        }
+    }
+
+    .buttons-wrapper {
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link-wrapper {
+        gap: 6px;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    /* COMMON BUTTON STYLES */
+
+    .button-background {
+        padding: 1px;
+        border-radius: var(--button-radius);
+        box-shadow: 2px 3px 25px #e7e7e740;
+    }
+
+    .button-base {
+        border: none;
+        width: 150px;
+        height: 60px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 40px;
+        position: relative;
+        color: var(--text-color);
+        border-radius: var(--button-radius);
+    }
+
+    .button-overlay {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        border-radius: var(--button-radius);
+    }
+
+    /* PRIMARY BUTTON VARIANT STYLES */
+
+    .button-background--primary {
+        background-image: linear-gradient(303.43deg, #c4c4c4 1.04%, #7E56CF 70.61%);
+    }
+
+    .button-base--primary {
+        background-image: linear-gradient(243.95deg, #8c26e0 17.34%, #7e56cf99 94.88%);
+
+        &:hover, &:focus, &:active {
+            color: var(--text-color);
+        }
+    }
+
+    .button-overlay--primary {
+        background-image: linear-gradient(247.54deg, #a94dff 18.51%, #4d1a3733 138.28%);
+
+        &:hover {
+            opacity: 1;
+        },
+    }
+
+    /* SECONDARY BUTTON VARIANT STYLES */
+
+    .button-background--secondary {
+        background-image: linear-gradient(243.95deg, #C9D0DF 17.34%, #d7e9f699 94.88%);
+    }
+
+    .button-base--secondary {
+        background-image: none;
+        color: var(--text-color-secondary);
+
+        &:hover, &:focus, &:active {
+            color: var(--text-color);
+
+            .button-overlay--secondary {
+                opacity: 1;
+            }
+        }
+    }
+
+    .button-overlay--secondary {
+        background-image: linear-gradient(247.54deg, #a94dff 18.51%, #4d1a3780 138.28%);
+    }
+
+    /* EXPANDING BUTTON VARIANT STYLES */
+
+    .button-background--expanding {
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(247.54deg, #bf78ff 18.51%, #1f0a1780 138.28%);
+
+        &:hover {
+            .button-overlay--expanding {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+
+            .button-base--expanding {
+                color: var(--text-color-secondary);
+            }
+        },
+    }
+
+    .button-base--expanding {
+        background: transparent;
+        color: var(--text-color);
+    }
+
+    .button-overlay--expanding {
+        top: -72%;
+        left: -26%;
+        width: 150%;
+        height: 250%;
+        position: absolute;
+        border-radius: 250%;
+        transform: scale(0, 0);
+        transition: all 0.4s ease;
+        background-image: linear-gradient(243.95deg, #C9D0DF 17.34%, #d7e9f699 94.88%);
+    }
+
+    /* FLIP BUTTON VARIANT STYLES */
+
+    .button-background__flip {
+        background-image: linear-gradient(303.43deg, #c4c4c4 1.04%, #7E56CF 70.61%);
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            .button-overlay__flip-text--top {
+                transform: translate(-50%, -250%);
+            }
+
+            .button-overlay__flip-text--bottom {
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .button-base__flip {
+        background-image: linear-gradient(243.95deg, #8c26e0 17.34%, #7e56cf99 94.88%);
+
+        &:hover, &:focus, &:active {
+            color: var(--text-color);
+        }
+    }
+
+    .button-overlay__flip {
+        background-image: linear-gradient(247.54deg, #a94dff 18.51%, #4d1a3733 138.28%);
+
+        &:hover {
+            opacity: 1;
+        },
+    }
+
+    .button-overlay__flip-text {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        position: absolute;
+        pointer-events: none;
+        transition: transform 0.2s ease;
+    }
+
+    .button-overlay__flip-text--top {
+        transform: translate(-50%, -50%);
+    }
+
+    .button-overlay__flip-text--bottom {
+        transform: translate(-50%, 250%);
+    }
+</style>
+</html>
